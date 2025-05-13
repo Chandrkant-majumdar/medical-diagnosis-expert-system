@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Footer } from "../components";
 
 export default function Home() {
   return (
@@ -96,116 +97,8 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Footer */}
-      <footer className="bg-gray-50 border-t border-lightBlue pt-12 pb-8">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-            {/* Project Info */}
-            <div className="col-span-1 md:col-span-2">
-              <div className="flex items-center mb-4">
-                <span className="text-2xl mr-2">👨‍⚕️</span>
-                <span className="text-darkBlue font-bold text-lg">
-                  Medical Diagnosis Expert System
-                </span>
-              </div>
-              <p className="text-gray-600 mb-4">
-                An intelligent medical diagnosis system powered by CLIPS
-                rule-based engine. Built as part of academic research in expert
-                systems.
-              </p>
-            </div>
-
-            {/* Quick Links */}
-            <div>
-              <h3 className="font-semibold text-darkBlue mb-4">Quick Links</h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link
-                    to="/chat"
-                    className="text-gray-600 hover:text-codyBlue"
-                  >
-                    Start Diagnosis
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/about"
-                    className="text-gray-600 hover:text-codyBlue"
-                  >
-                    About Project
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/documentation"
-                    className="text-gray-600 hover:text-codyBlue"
-                  >
-                    Documentation
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            {/* Resources */}
-            <div>
-              <h3 className="font-semibold text-darkBlue mb-4">Resources</h3>
-              <ul className="space-y-2">
-                <li>
-                  <a
-                    href="https://www.clipsrules.net"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-600 hover:text-codyBlue"
-                  >
-                    CLIPS Documentation
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/yourusername/your-repo"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-600 hover:text-codyBlue"
-                  >
-                    GitHub Repository
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="mailto:your.email@example.com"
-                    className="text-gray-600 hover:text-codyBlue"
-                  >
-                    Contact Developer
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Bottom Bar */}
-          <div className="pt-8 border-t border-gray-200">
-            <div className="flex flex-col md:flex-row justify-between items-center">
-              <p className="text-gray-600 text-sm">
-                © 2024 Medical Diagnosis Expert System - Academic Project
-              </p>
-              <div className="flex space-x-6 mt-4 md:mt-0">
-                <a
-                  href="/privacy"
-                  className="text-sm text-gray-600 hover:text-codyBlue"
-                >
-                  Privacy Policy
-                </a>
-                <a
-                  href="/terms"
-                  className="text-sm text-gray-600 hover:text-codyBlue"
-                >
-                  Terms of Use
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      {/* Using the Footer component */}
+      <Footer />
     </div>
   );
 }

@@ -4,6 +4,7 @@ import FinalDiagnosisCard from "../components/diagnosis/FinalDiagnosisCard";
 import SymptomCard from "../components/symptoms/SymptomCard";
 import SymptomCategories from "../components/symptoms/SymptomCategories";
 import MessagesContainer from "../components/chat/MessagesContainer";
+import { Footer } from "../components";
 // Import the symptom categories from the new file
 import { symptomCategories } from "../data/symptomCategoriesData";
 
@@ -432,7 +433,7 @@ function Chat() {
                       Select Your Symptoms
                     </h2>
                     <p className="text-sm text-gray-500">
-                      Choose all symptoms you're experiencing for an accurate
+                      Enter your symptoms one by one for a step-by-step
                       diagnosis
                     </p>
                   </div>
@@ -689,6 +690,11 @@ function Chat() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Footer component (hidden in this view as we have fixed bottom panel) */}
+      <div className="hidden">
+        <Footer />
       </div>
     </div>
   );

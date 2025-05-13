@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="#ffffff" stroke="#3B82F6" stroke-width="5"/>
+  
+  <!-- Heart shape -->
+  <path d="M100 160 C 60 120 40 100 40 80 C 40 60 60 40 80 40 C 90 40 90 50 100 60 C 110 50 110 40 120 40 C 140 40 160 60 160 80 C 160 100 140 120 100 160 Z" 
+        fill="#3B82F6" />
+  
+  <!-- EKG/Heartbeat line -->
+  <polyline points="40,100 60,100 70,80 80,120 90,90 100,140 110,60 120,100 140,100 160,100" 
+            stroke="white" stroke-width="5" fill="none" stroke-linejoin="round" stroke-linecap="round" />
+  
+  <!-- Text e-Doctor -->
+  <text x="100" y="185" font-family="Arial, sans-serif" font-weight="bold" font-size="20" text-anchor="middle" fill="#3B82F6">e-Doctor</text>
+</svg>

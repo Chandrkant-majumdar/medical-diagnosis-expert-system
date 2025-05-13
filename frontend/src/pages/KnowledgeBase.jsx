@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Footer } from "../components";
 
 // API base URL - update this to your actual backend address
 const API_BASE_URL =
@@ -222,8 +223,8 @@ export default function KnowledgeBase() {
   }, [searchTerm]);
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 py-12">
+    <div className="min-h-screen bg-gray-50 flex flex-col">
+      <div className="max-w-7xl mx-auto px-4 py-12 flex-grow">
         <div className="flex justify-between items-center mb-8">
           <div>
             <h1 className="text-3xl font-bold text-darkBlue">
@@ -899,6 +900,9 @@ export default function KnowledgeBase() {
           </div>
         )}
       </div>
+
+      {/* Footer Component */}
+      {/* <Footer /> */}
     </div>
   );
 }
